@@ -4,6 +4,7 @@ import Hero from '../components/ui/Hero';
 import Heading from '../components/ui/Heading';
 import ServiceCard from '../components/ui/ServiceCard';
 import CTA from '../components/ui/CTA';
+import services from '../data/services';  
 
 const Services = () => {
   // SEO data
@@ -75,123 +76,6 @@ const Services = () => {
   };
 
   // Services data
-  const services = [
-    {
-      id: 1,
-      title: 'Metal Cutting',
-      slug: 'metal-cutting',
-      description: 'Precision cutting services using oxy-gas torches, plasma, waterjet, and CNC cutting systems for various materials and thicknesses.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0 0L9.121 9.121" />
-        </svg>
-      ),
-      image: '/images/services/cutting.jpg',
-      features: [
-        'Oxy-gas cutting for thick materials',
-        'Plasma cutting for precision and speed',
-        'Waterjet cutting for heat-sensitive materials',
-        'CNC cutting for complex shapes',
-        'Custom cutting services for all metals',
-      ],
-    },
-    {
-      id: 2,
-      title: 'Metal Forming & Bending',
-      slug: 'metal-forming',
-      description: 'Custom metal forming and bending using press brakes, roll forming, and tube bending machines for precise component shaping.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-        </svg>
-      ),
-      image: '/images/services/forming.jpg',
-      features: [
-        'Press brake forming for precise bends',
-        'Roll forming for continuous profiles',
-        'Tube and pipe bending services',
-        'Custom metal forming solutions',
-        'Sheet metal bending and folding',
-      ],
-    },
-    {
-      id: 3,
-      title: 'Welding Services',
-      slug: 'welding',
-      description: 'Expert welding services including MIG, TIG, and gas welding for strong, durable, and aesthetic metal joints for various applications.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-        </svg>
-      ),
-      image: '/images/services/welding.jpg',
-      features: [
-        'MIG welding for versatility and speed',
-        'TIG welding for precision and aesthetics',
-        'Gas welding for specialized applications',
-        'Spot and seam welding services',
-        'Custom welding for all metal types',
-      ],
-    },
-    {
-      id: 4,
-      title: 'CNC Machining',
-      slug: 'cnc-machining',
-      description: 'Precision CNC machining services for complex components with tight tolerances and exceptional surface finish for industrial applications.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-        </svg>
-      ),
-      image: '/images/services/cnc.jpg',
-      features: [
-        'CNC turning for cylindrical parts',
-        'CNC milling for complex features',
-        'Multi-axis machining capabilities',
-        'Precision parts manufacturing',
-        'Custom machining solutions',
-      ],
-    },
-    {
-      id: 5,
-      title: 'Structural Fabrication',
-      slug: 'structural-fabrication',
-      description: 'Custom structural steel fabrication for industrial, commercial, and specialized applications with engineered precision.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-        </svg>
-      ),
-      image: '/images/services/structural.jpg',
-      features: [
-        'Industrial steel frameworks',
-        'Equipment support structures',
-        'Staircases, railings, and platforms',
-        'Custom structural components',
-        'Industrial infrastructure fabrication',
-      ],
-    },
-    {
-      id: 6,
-      title: 'Custom Metal Fabrication',
-      slug: 'custom-fabrication',
-      description: 'Specialized custom fabrication services for unique components and assemblies based on your specific requirements and specifications.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-        </svg>
-      ),
-      image: '/images/services/custom.jpg',
-      features: [
-        'Prototype development',
-        'One-off custom components',
-        'Production runs of custom parts',
-        'Multi-metal fabrication',
-        'Complete engineered solutions',
-      ],
-    },
-  ];
 
   return (
     <>

@@ -55,14 +55,14 @@ const Header = () => {
             aria-label="Shobha Engineering Workshop"
           >
             <img 
-              src="/images/logo.svg" 
+              src="/images/SEWS-logo2.png" 
               alt="Shobha Engineering Workshop Logo" 
-              className="h-10 w-auto"
+              className="h-11 w-auto"
             />
-            <div className={`ml-3 transition-colors duration-300 ${isScrolled || !isHomePage ? 'text-gray-900' : 'text-white'}`}>
+            {/* <div className={`ml-3 transition-colors duration-300 ${isScrolled || !isHomePage ? 'text-gray-900' : 'text-white'}`}>
               <h1 className="text-lg font-bold leading-tight">Shobha Engineering</h1>
               <p className="text-xs font-medium opacity-80">Workshop</p>
-            </div>
+            </div> */}
           </Link>
           
           {/* Desktop Navigation */}
