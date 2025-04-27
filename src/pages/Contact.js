@@ -69,8 +69,8 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="text-xl font-bold mb-1">Phone Numbers</h3>
                     <p className="text-gray-600">
-                      Primary: +91 XXXXXXXXXX<br />
-                      Alternative: +91 XXXXXXXXXX
+                      Primary: +91 9415154200<br />
+                      Alternative: +91 9415154200
                     </p>
                   </div>
                 </div>

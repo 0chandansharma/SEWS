@@ -449,7 +449,7 @@ const Home = () => {
                   <div className="contact-info-content-modern">
                     <h3 className="text-lg font-semibold mb-1">Phone Number</h3>
                     <p className="text-gray-600">
-                      +91 XXXXXXXXXX
+                      +91 9415154200
                     </p>
                   </div>
                 </div>

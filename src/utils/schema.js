@@ -7,7 +7,7 @@ import helpers from './helpers';
 const companyInfo = {
   name: "Shobha Engineering Workshop",
   url: "https://www.shobhaengineering.com",
-  logo: "https://www.shobhaengineering.com/images/logo.svg",
+  logo: "https://www.shobhaengineering.com/images/SEWS-logo2.png",
   address: {
     streetAddress: "Industrial Area",
     addressLocality: "Lucknow",
@@ -15,7 +15,7 @@ const companyInfo = {
     postalCode: "XXXXXX",
     addressCountry: "IN"
   },
-  telephone: "+91-XXXXXXXXXX",
+  telephone: "+91-9415154200",
   email: "info@shobhaengineering.com"
 };
 

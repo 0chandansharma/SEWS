@@ -14,7 +14,7 @@ const companyInfo = {
       postalCode: "XXXXXX",
       addressCountry: "IN"
     },
-    telephone: "+91-XXXXXXXXXX",
+    telephone: "+91-9415154200",
     email: "info@shobhaengineering.com"
   };
   
